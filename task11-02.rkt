@@ -10,7 +10,7 @@
        (iter L1 (+ cur 1) (append L2 (list (car L3))) (cdr L3)))
       (else (list (append L1 L3) L2))))
   (iter '() 0 '() L))
-
+;; (0 1 2 3 4 5 6) --> (0 1 4 5 6) (2 3) --> (0 1  
 ;; Inserts L2 into L1 on position i
 (define (insert L1 L2 i)
   (define (divide cur L3 L4)
